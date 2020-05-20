@@ -1,0 +1,41 @@
+{
+  "name": "milton_reyes_p0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/app.ts",
+    "test": "jest --verbose --coverage"
+  },
+  "author": "Milton Reyes",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milton-reyes/dwelling-kitchen-Inventory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/milton-reyes/dwelling-kitchen-Inventory/issues"
+  },
+  "homepage": "https://github.com/milton-reyes/dwelling-kitchen-Inventory#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.5",
+    "@types/pg": "^7.14.3",
+    "@types/supertest": "^2.0.9",
+    "jest": "^26.0.0",
+    "nodemon": "^2.0.3",
+    "supertest": "^4.0.2",
+    "ts-jest": "^25.4.0",
+    "ts-node": "^8.10.1",
+    "tslint": "^6.1.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.0.0",
+    "express": "^4.17.1",
+    "pg": "^8.1.0"
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Yukaju</title>
+<link rel="shortcut icon" href="resources/imgs/favicon.png" type="image/x-icon">
+</head>
+<body id="page-top" class="index">
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header page-scroll">
+		</div>
+	</div>
+</nav>
+<header>
+	<div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Food Groceries</h3><hr>
+    <form action="foodGroceries" method="post" class="form-horizontal" id="foodGrocery">
+        <div class="form-group">
+            <label for="food" class="col-sm-4 control-label">Food</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="food" name="food" placeholder="food" required="required"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="upcFood" class="col-sm-4 control-label">UPC_Food</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="upcFood" name="upcFood" placeholder="upc_food" required="required"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="notes" class="col-sm-4 control-label">Notes</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="notes" name="notes" placeholder="notes" required="required"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-1">
+              <button type="submit" class="btn btn-primary" onclick="document.foodGrocery.submit()">Add</button>
+            </div>
+          </div>
+    </form>
+    <br><h3>Brands</h3><hr>
+    <form action="brands" method="post" class="form-horizontal" id="brands">
+        <!--<div class="form-group">
+            <label for="name" class="col-sm-4 control-label">Name</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="required"/>
+            </div>
+        </div>-->
+        <div class="form-group">
+            <label for="brand" class="col-sm-4 control-label">Brand</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="brand" name="brand" placeholder="brand" required="required"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-1">
+              <button type="submit" class="btn btn-primary" onclick="submitbrand()">Add</button>
+            </div>
+          </div>
+    </form>
+    <br><h3>Categories</h3><hr>
+    <form action="categories" method="post" class="form-horizontal" id="categories">
+        <div class="form-group">
+            <label for="category" class="col-sm-4 control-label">Category</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="category" name="category" placeholder="category" required="required"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-1">
+              <button type="submit" class="btn btn-primary" onclick="document.categories.submit()">Add</button>
+            </div>
+          </div>
+    </form>
+    <br><h3>Retailers</h3><hr>
+    <form action="retailers" method="post" class="form-horizontal" id="retailers">
+        <div class="form-group">
+            <label for="retailer" class="col-sm-4 control-label">Retailer</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="retailer" name="retailer" placeholder="retailer" required="required"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-1">
+              <button type="submit" class="btn btn-primary" onclick="document.retailers.submit()">Add</button>
+            </div>
+          </div>
+    </form>
+    <br><h3>Storages</h3><hr>
+    <form action="storages" method="post" class="form-horizontal" id="storages">
+        <div class="form-group">
+            <label for="storage" class="col-sm-4 control-label">Storage</label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" id="storage" name="storage" placeholder="storage" required="required"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-4 col-sm-1">
+              <button type="submit" class="btn btn-primary" onclick="document.storages.submit()">Add</button>
+            </div>
+          </div>
+    </form>
+
+	</div>
+</header>
+<footer class="text-center">
+</footer>
+<script>
+    function submitbrand() {
+        document.brands.submit();
+    }
+</script>
+</body>
+</html>

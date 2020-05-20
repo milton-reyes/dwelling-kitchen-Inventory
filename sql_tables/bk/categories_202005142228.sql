@@ -1,0 +1,17 @@
+INSERT INTO public.categories (category) VALUES 
+('Beverage')
+,('Bread/Bakery')
+,('Canned/Jarred')
+,('Dairy')
+,('Dry Baking')
+,('Frozen')
+,('Meat')
+,('Produce')
+,('Cleaners')
+,('Paper') 
+,('Personal Care')
+,('Staple')
+,('Junk')
+,('Plant Milk')
+,('Other')
+;
